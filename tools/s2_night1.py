@@ -25,9 +25,9 @@ def build(S):
     S.line(text="그녀가 잠깐 팔짱을 끼고, 벽에 기대서 나를 봤다. 대답을 고르는 시간이 길었다.")
 
     S.choice([
-        {"t": "\"이름이 지워진 게 계속 걸려서요. 그걸로 들어도 될까요?\"", "to": "d3_lp_blank", "eff": {"doyeon": 2}, "flag": "lp_hint"},
-        {"t": "\"그럼 오늘 기분에 맞는 걸로 골라 주세요.\"", "to": "d3_lp_her", "eff": {"doyeon": 2}},
-        {"t": "\"제가 아는 곡이 있으면 좋겠는데, 여기 있을까요?\"", "to": "d3_lp_known", "eff": {"doyeon": 1}},
+        {"t": "“이름이 지워진 게 계속 걸려서요. 그걸로 들어도 될까요?”", "to": "d3_lp_blank", "eff": {"doyeon": 2}, "flag": "lp_hint"},
+        {"t": "“그럼 오늘 기분에 맞는 걸로 골라 주세요.”", "to": "d3_lp_her", "eff": {"doyeon": 2}},
+        {"t": "“제가 아는 곡이 있으면 좋겠는데, 여기 있을까요?”", "to": "d3_lp_known", "eff": {"doyeon": 1}},
     ])
 
     S.label("d3_lp_blank")
@@ -76,8 +76,8 @@ def build(S):
     S.line(text="그 말이 너무 진지해서, 오히려 웃음이 났다. 참으려고 했는데 늦었다.")
 
     S.choice([
-        {"t": "\"못 봤어요. 다만 소리는 들었어요.\"", "to": "d3_clumsy_tease", "eff": {"doyeon": 2}},
-        {"t": "\"접시 잡는 솜씨는 진짜네요.\"", "to": "d3_clumsy_praise", "eff": {"doyeon": 2}},
+        {"t": "“못 봤어요. 다만 소리는 들었어요.”", "to": "d3_clumsy_tease", "eff": {"doyeon": 2}},
+        {"t": "“접시 잡는 솜씨는 진짜네요.”", "to": "d3_clumsy_praise", "eff": {"doyeon": 2}},
         {"t": "아무것도 못 본 얼굴로 컵을 닦는다.", "to": "d3_clumsy_ignore", "eff": {"doyeon": 1}},
     ])
 

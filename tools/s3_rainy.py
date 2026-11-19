@@ -74,9 +74,9 @@ def build(S):
     S.line(text="하린이 컵을 내려다봤다. 크림 위의 반달이 아직 천천히 흘러내리고 있었다.")
 
     S.choice([
-        {"t": "\"달의 뒷면 라떼\"는 어때요?", "to": "r_name_moon", "eff": {"harin": 2}, "flag": "sig_moon"},
-        {"t": "\"새벽 한 시 라떼\"는 어때요?", "to": "r_name_one", "eff": {"harin": 2}, "flag": "sig_one"},
-        {"t": "\"보름달 크림 라떼\"는 어때요?", "to": "r_name_full", "eff": {"harin": 1}},
+        {"t": "“달의 뒷면 라떼”는 어때요?", "to": "r_name_moon", "eff": {"harin": 2}, "flag": "sig_moon"},
+        {"t": "“새벽 한 시 라떼”는 어때요?", "to": "r_name_one", "eff": {"harin": 2}, "flag": "sig_one"},
+        {"t": "“보름달 크림 라떼”는 어때요?", "to": "r_name_full", "eff": {"harin": 1}},
     ])
 
     S.label("r_name_moon")
@@ -123,8 +123,8 @@ def build(S):
 
     S.choice([
         {"t": "이어폰 한쪽을 받아 귀에 끼운다.", "to": "r_ear_take", "eff": {"harin": 2}, "flag": "earphone"},
-        {"t": "\"여기서 스피커로 틀어 볼래요? 사장님도 들으시게요.\"", "to": "r_ear_speaker", "eff": {"harin": 1, "doyeon": 1}},
-        {"t": "\"지금은 마감 준비 중이라, 다음에 들을게요.\"", "to": "r_ear_later", "eff": {"harin": 0}},
+        {"t": "“여기서 스피커로 틀어 볼래요? 사장님도 들으시게요.”", "to": "r_ear_speaker", "eff": {"harin": 1, "doyeon": 1}},
+        {"t": "“지금은 마감 준비 중이라, 다음에 들을게요.”", "to": "r_ear_later", "eff": {"harin": 0}},
     ])
 
     S.label("r_ear_take")

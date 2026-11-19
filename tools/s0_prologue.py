@@ -22,8 +22,8 @@ def build(S):
     S.line(who="한도연", e="base", text="들어오세요. 물기부터 닦고.")
 
     S.choice([
-        {"t": "\"안녕하세요. 공고 보고 왔습니다. 늦은 시간에 죄송해요.\"", "to": "p_greet_polite", "eff": {"doyeon": 2}},
-        {"t": "\"여기 커피 맛있으면 일할게요. 아니면 다시 갈게요.\"", "to": "p_greet_joke", "eff": {"doyeon": 1}, "flag": "bold"},
+        {"t": "“안녕하세요. 공고 보고 왔습니다. 늦은 시간에 죄송해요.”", "to": "p_greet_polite", "eff": {"doyeon": 2}},
+        {"t": "“여기 커피 맛있으면 일할게요. 아니면 다시 갈게요.”", "to": "p_greet_joke", "eff": {"doyeon": 1}, "flag": "bold"},
         {"t": "말없이 우산을 잘 접어 문 옆에 세워 둔다.", "to": "p_greet_quiet", "eff": {"doyeon": 1}},
     ])
 
@@ -61,9 +61,9 @@ def build(S):
     S.line(who="한도연", text="마셔 보세요. 그리고 솔직하게 말해 주세요. 손님한테는 못 묻는 말이거든요.")
 
     S.choice([
-        {"t": "\"산미가 먼저 오는데, 끝이 깨끗해요.\"", "to": "p_taste_acid", "eff": {"doyeon": 2}, "flag": "coffee_talk"},
-        {"t": "\"따뜻해서 좋아요. 이런 말 하면 안 되나요?\"", "to": "p_taste_warm", "eff": {"doyeon": 2}},
-        {"t": "\"이거… 팔아도 되겠는데요.\"", "to": "p_taste_joke", "eff": {"doyeon": 1}},
+        {"t": "“산미가 먼저 오는데, 끝이 깨끗해요.”", "to": "p_taste_acid", "eff": {"doyeon": 2}, "flag": "coffee_talk"},
+        {"t": "“따뜻해서 좋아요. 이런 말 하면 안 되나요?”", "to": "p_taste_warm", "eff": {"doyeon": 2}},
+        {"t": "“이거… 팔아도 되겠는데요.”", "to": "p_taste_joke", "eff": {"doyeon": 1}},
     ])
 
     S.label("p_taste_acid")

@@ -21,8 +21,8 @@ def build(S):
 
     S.choice([
         {"t": "하린의 녹음에 같이 참여한다. 골목 끝까지 걸어 보고, 소리를 찾아 준다.", "to": "a_record_help", "eff": {"harin": 2}, "flag": "alley_record"},
-        {"t": "\"사장님한테 들은 이야기가 있는데\" 하고 도연의 과거를 묻는다.", "to": "a_doyeon_story", "eff": {"doyeon": 2}, "flag": "lp_secret"},
-        {"t": "\"너무 늦었으니까 들어가요\" 하고 먼저 일어선다.", "to": "a_go_home", "eff": {"harin": 1}},
+        {"t": "“사장님한테 들은 이야기가 있는데” 하고 도연의 과거를 묻는다.", "to": "a_doyeon_story", "eff": {"doyeon": 2}, "flag": "lp_secret"},
+        {"t": "“너무 늦었으니까 들어가요” 하고 먼저 일어선다.", "to": "a_go_home", "eff": {"harin": 1}},
     ])
 
     S.label("a_record_help")

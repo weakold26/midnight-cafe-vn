@@ -45,7 +45,7 @@ def build(S):
     S.choice([
         {"t": "손님에게 바로 말하고, 새로 내리겠다고 한다.", "to": "d1_spill_honest", "eff": {"doyeon": 2}, "flag": "honest"},
         {"t": "일단 갖다 드리고, 돌아와서 새 잔을 만든다.", "to": "d1_spill_quiet", "eff": {"doyeon": 1}},
-        {"t": "손등을 감추고 웃으면서 \"뜨거우니까 조심하세요\" 한다.", "to": "d1_spill_joke", "eff": {"doyeon": 0}},
+        {"t": "손등을 감추고 웃으면서 “뜨거우니까 조심하세요” 한다.", "to": "d1_spill_joke", "eff": {"doyeon": 0}},
     ])
 
     S.label("d1_spill_honest")
@@ -106,7 +106,7 @@ def build(S):
 
     S.choice([
         {"t": "물 한 잔을 먼저 갖다 드리고, 천천히 메뉴를 묻는다.", "to": "d1_harin_water", "eff": {"harin": 2}},
-        {"t": "도연 씨에게 \"저분 단골이세요?\" 하고 조용히 묻는다.", "to": "d1_harin_doyeon", "eff": {"doyeon": 2}},
+        {"t": "도연 씨에게 “저분 단골이세요?” 하고 조용히 묻는다.", "to": "d1_harin_doyeon", "eff": {"doyeon": 2}},
         {"t": "메뉴판을 조용히 테이블에 올려 두고 물러난다.", "to": "d1_harin_leave", "eff": {"harin": 1}},
     ])
 

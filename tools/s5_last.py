@@ -33,8 +33,8 @@ def build(S):
     S.line(text="그건 초대인지, 그냥 영업시간 안내인지 알 수 없었다. 하지만 그녀가 그 말을 하기까지, 컵 하나를 세 번 닦았다는 건 알 수 있었다.")
 
     S.choice([
-        {"t": "\"방학 끝나도 여기서 계속 일하고 싶어요.\"", "to": "e_stay", "eff": {"doyeon": 2}, "flag": "stay"},
-        {"t": "\"금요일 전시회, 제가 먼저 가서 기다릴게요.\"", "to": "e_exhibit", "eff": {"harin": 2}, "flag": "exhibit"},
+        {"t": "“방학 끝나도 여기서 계속 일하고 싶어요.”", "to": "e_stay", "eff": {"doyeon": 2}, "flag": "stay"},
+        {"t": "“금요일 전시회, 제가 먼저 가서 기다릴게요.”", "to": "e_exhibit", "eff": {"harin": 2}, "flag": "exhibit"},
         {"t": "아무 말 없이 마지막 날까지 평소처럼 일한다.", "to": "e_silent", "eff": {"doyeon": 1, "harin": 1}},
     ])
 
