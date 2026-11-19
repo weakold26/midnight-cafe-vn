@@ -44,6 +44,7 @@
   var bgFront = 'A', charFront = 'A';
   var settings = { sound: true, bgm: true, speed: 24 };
   var autoTimer = null, autoOn = false, skipOn = false;
+  var rainState = false;
 
   function newState() {
     return { node: null, aff: { doyeon: 0, harin: 0 }, flags: {}, chapter: '' };
@@ -178,6 +179,7 @@
   function startNew() {
     VNAudio.unlock();
     VNAudio.setRain(false);
+    rainState = false;
     document.body.classList.remove('is-ending');
     document.body.classList.remove('is-title');
     $('title-screen').classList.remove('on');
@@ -331,7 +333,7 @@
         }
         if (n.bg) setBg(n.bg);
         if (n.bgm) VNAudio.setMood(n.bgm);
-        if (typeof n.rain !== 'undefined') VNAudio.setRain(!!n.rain);
+        if (typeof n.rain !== 'undefined') { rainState = !!n.rain; VNAudio.setRain(rainState); }
         if (n.hide) hideChar();
         else {
           if (n.hide2) clearChar('side');
@@ -599,6 +601,7 @@
       flags: state.flags,
       chapter: state.chapter,
       bg: document.body.dataset.bg || 'cafe_day',
+      rain: rainState,
       chars: { main: chars.main, side: chars.side },
       history: history.slice(-60),
       ts: Date.now()
@@ -627,6 +630,7 @@
     ended = false;
     hideChar(true);
     if (data.bg) setBg(data.bg);
+    if (data.rain) VNAudio.setRain(true);
     if (data.chars) {
       if (data.chars.main) setChar('main', data.chars.main.id, data.chars.main.expr);
       if (data.chars.side) setChar('side', data.chars.side.id, data.chars.side.expr);
