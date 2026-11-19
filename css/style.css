@@ -761,6 +761,11 @@ body.is-ending #next-ind { opacity: 0 !important; transition: opacity 0.5s ease;
   #chapter-card { font-size: 18px; letter-spacing: 0.18em; }
 }
 
+@media (max-width: 480px) {
+  .kicker { letter-spacing: 0.26em; font-size: 9px; }
+  .title-inner h1 { letter-spacing: -0.03em; }
+}
+
 @media (max-height: 560px) {
   .char--main { height: 88%; bottom: 0; }
   .char--side { height: 66%; bottom: 0; }
