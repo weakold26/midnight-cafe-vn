@@ -328,7 +328,12 @@
     setMood: setMood,
     setBgm: setBgm,
     sfx: sfx,
-    setSfx: function (on) { enabled = on; },
+    setSfx: function (on) {
+      enabled = on;
+      if (ctx && rainGain && rainOn) {
+        rainGain.gain.setTargetAtTime(on ? 0.5 : 0, ctx.currentTime, 0.4);
+      }
+    },
     isReady: function () { return !!ctx; },
     debug: function () {
       return { state: ctx ? ctx.state : 'none', mood: moodName, bgmGain: bgmBus ? bgmBus.gain.value : 0 };
