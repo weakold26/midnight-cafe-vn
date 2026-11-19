@@ -82,7 +82,7 @@ body { overflow: hidden; }
 
 /* 주역 · 조역 크기 (두 스프라이트 모두 1500px 높이로 정규화됨) */
 .char--main { height: 97%; bottom: -1.5%; }
-.char--side { height: 72%; bottom: -1%; }
+.char--side { height: 86%; bottom: -1%; }
 
 #char-layer.two .char--main { left: 34%; }
 #char-layer.two .char--side { left: 73%; }
@@ -738,7 +738,7 @@ body.is-ending #next-ind { opacity: 0 !important; transition: opacity 0.5s ease;
   #btn-load { display: none; }
   .char { height: 74%; bottom: 1%; }
   .char--main { height: 78%; bottom: 0; }
-  .char--side { height: 58%; bottom: 0; }
+  .char--side { height: 66%; bottom: 0; }
   #char-layer.two .char--main { left: 26%; }
   #char-layer.two .char--side { left: 71%; }
   #dialogue { padding: 18px 17px 22px; border-radius: 15px; min-height: 108px; }
